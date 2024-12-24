@@ -178,7 +178,7 @@ print(result)  # Output: 25
 def celsius_to_farhenheit(celsius):
     return (celsius * 9/5) +32
 
-celsius=int(input("enter the celsius value:"))
+celsius=float(input("enter the celsius value:"))
 farhenheit=celsius_to_farhenheit(celsius)
 print(f"{celsius} degree celsius is equal to {farhenheit} degree farhenheit")
 
@@ -186,6 +186,6 @@ print(f"{celsius} degree celsius is equal to {farhenheit} degree farhenheit")
 def farhenheit_to_celsius(farhenheit):
     return (farhenheit - 32) * 5/9
 
-farhenheit = int(input("Enter the farhenheit value:"))
+farhenheit = float(input("Enter the farhenheit value:"))
 celsius = farhenheit_to_celsius(farhenheit)
 print(f"{farhenheit} degree farhenheit is equal to {celsius:.2f} degree celsius")
