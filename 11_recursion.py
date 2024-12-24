@@ -1,3 +1,6 @@
+"""Recursion is a method of solving problems where a function calls itself as a subroutine. 
+This allows the function to be repeated several times as it breaks down the problem into 
+smaller, more manageable pieces."""
 def factorial(n):
     """
     Calculate the factorial of a non-negative integer n.
