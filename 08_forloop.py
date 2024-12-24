@@ -1,5 +1,5 @@
 my_list = [1, 2, 3, 4]
-for item in my_list: #iterating through list
+for item in my_list:  # Iterate through each item in the list
     print(item)
 
 # Loop through numbers 0 to 4
@@ -7,11 +7,11 @@ for i in range(5):
     print(i)
 
 # Loop through numbers 1 to 4
-for i in range(1,5):
+for i in range(1, 5):
     print(i)
 
 fruits = ['apple', 'banana', 'cherry']
-for fruit in fruits:
+for fruit in fruits:  # Iterate through each fruit in the list
     print(fruit)
 
 # Loop through each character in a string
@@ -20,7 +20,7 @@ for char in "hello":
 
 # Loop through keys and values in a dictionary
 person = {'name': 'Alice', 'age': 25, 'city': 'New York'}
-for key, value in person.items():
+for key, value in person.items():  # Iterate through dictionary items
     print(f"{key}: {value}")
 
 for i in range(5):
@@ -33,57 +33,59 @@ for i in range(5):
         continue  # Skip the current iteration when i is 3
     print(i)
 
-#nested loop
+# Nested loop
 # Loop through a 2D list
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-for row in matrix: 
-    for element in row: 
+for row in matrix:  # Iterate through each row in the matrix
+    for element in row:  # Iterate through each element in the row
         print(element, end=" ")
     print()
 
-
 fruits = ['apple', 'banana', 'cherry']
-for index, fruit in enumerate(fruits): # enumerate function return the index and value of the list
+for index, fruit in enumerate(fruits):  # Use enumerate to get index and value of the list
     print(f"{index}: {fruit}")
 
-names = ['Alice', 'Bob', 'Charlie'] 
+names = ['Alice', 'Bob', 'Charlie']
 ages = [25, 30, 35]
-for name, age in zip(names, ages): #zip function return the value of the list in the form of tuple 
+for name, age in zip(names, ages):  # Use zip to iterate through lists in tuples
     print(f"{name} is {age} years old")
 
-# Create a new list with squared values
+# Create a new list with squared values using list comprehension
 squared = [x**2 for x in range(5)]
 print(squared)
 
-# pyramid
-n=int(input('enter the no.:'))
-for i in range(1,n+1):
-    print(" "*(n-i),end = '')
-    print("*"*(2*i-1),end="")
-    print("")
-  
-# half pyramid
-n=int(input('enter the no.:'))
-for i in range(1,n+1):
-    print("*"*i,end="")
-    print("")
+# Pyramid pattern
+n = int(input('Enter the number of rows: '))
+for i in range(1, n + 1):
+    print(" " * (n - i), end='')
+    print("*" * (2 * i - 1), end="")
+    print()
 
-n=int(input('enter the no.:'))
-for i in range(1,n+1):
-    print(" "*(n-i),end="")
-    print('*'*i,end="")
-    print("")
+# Half pyramid pattern
+n = int(input('Enter the number of rows: '))
+for i in range(1, n + 1):
+    print("*" * i, end="")
+    print()
 
-n=int(input('enter the no.:'))
-for i in range(1,n+1):
-    if (i==1 or i==n):
-        print("* "*n,end=" ")
+# Inverted half pyramid pattern
+n = int(input('Enter the number of rows: '))
+for i in range(1, n + 1):
+    print(" " * (n - i), end="")
+    print('*' * i, end="")
+    print()
+
+# Hollow square pattern
+n = int(input('Enter the size of the square: '))
+for i in range(1, n + 1):
+    if i == 1 or i == n:
+        print("* " * n, end=" ")
     else:
-        print("*",end="")
-        print(" "*(n+2),end="")    
-        print("*",end="")
-    print("")
+        print("*", end="")
+        print(" " * (n + 2), end="")
+        print("*", end="")
+    print()
 
-n=int(input('enter the no.:'))
-for i in range(11,0,-1):
-    print(f"{n}*{i}={n*i}")
+# Multiplication table
+n = int(input('Enter a number for the multiplication table: '))
+for i in range(11, 0, -1):
+    print(f"{n} * {i} = {n * i}")
